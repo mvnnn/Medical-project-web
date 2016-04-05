@@ -11,7 +11,8 @@ exports.new_post=function(req,res){
   var post = new Post({
   name : req.body.name,
   email : req.body.email,
-  medicine : req.body.medicine
+  medicine : req.body.medicine,
+  time : req.body.time
   });
   post.save(function(err){
     if(err) throw error
@@ -30,7 +31,8 @@ exports.post_update = function (req,res){
   Post.update({_id: req.params.id},
     {name:req.body.name,
     job:req.body.email,
-    medicine:req.body.medicine},
+    medicine:req.body.medicine,
+    time:req.body.time},
     function(err){
       if(err) throw err;
       else res.redirect('/Order');

@@ -8,6 +8,8 @@ block content
               input(type="text",class="form-control",name="email")
         p medicine:
               input(type="text",class="form-control",name="medicine")
+        p time:
+              input(type="text",class="form-control",name="time")
         p: button(type="submit",class="btn btn-default") Add
 
 
@@ -15,7 +17,7 @@ block content
             ul
               each person in posts
                  li
-                     h2=person.name +"(" + person.medicine +")"+ "{\t" + person.createAt +"}"
+                     h2=person.name +"(" + person.medicine +")"+ "{\t" + person.time +"}"
                      p
                         a(href="/update/#{person._id}")
                              input(type="button",value="update",class="btn btn-default")

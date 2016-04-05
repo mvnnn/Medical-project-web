@@ -14,9 +14,9 @@ var postSchema= Schema({
     type:String,
     required:true
   },
-  createAt:{
-    type:Date,
-    default:Date.now
+  time:{
+    type:String,
+    required:true
   }
 });
 
