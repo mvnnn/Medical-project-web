@@ -4,10 +4,12 @@ html(lang="en")
     title= medical
     script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
     link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/style.css')
+
   body
     nav.navbar.navbar-inverse
       div.container-fluid
         a.navbar-brand(href="info") Home
         a.navbar-brand.navbar-right(href="Order") Order
-
+    div.added
     block content

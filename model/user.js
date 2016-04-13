@@ -17,6 +17,17 @@ var postSchema= Schema({
   time:{
     type:String,
     required:true
+  },
+  address:{
+    type:String,
+    required:true
+  },
+  mobile:{
+    type:Number,
+    required:true
+  },
+  doctor:{
+    type:String
   }
 });
 

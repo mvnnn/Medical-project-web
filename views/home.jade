@@ -2,14 +2,20 @@ extends navbar
 
 block content
   form(method="POST")
-        p name:
+        p Name:
               input(type="text",class="form-control",name="name")
-        p email:
+        p Email:
               input(type="text",class="form-control",name="email")
-        p medicine:
+        p Medicine:
               input(type="text",class="form-control",name="medicine")
-        p time:
+        p Time:
               input(type="text",class="form-control",name="time")
+        p Address:
+              input(type="text",class="form-control",name="address")
+        p Mobile No.:
+              input(type="text",class="form-control",name="mobile")
+        p Doctor Precription:
+              input(type="text",class="form-control",name="doctor")
         p: button(type="submit",class="btn btn-default") Add
 
 

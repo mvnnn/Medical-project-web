@@ -10,7 +10,7 @@ var dburl='mongodb://localhost/wwww';
 mongoose.connect(dburl);
 
 var bodyparser=require('body-parser');
-var port=process.env.PORT || 3000 ;
+var port=process.env.PORT || 8000 ;
 
 
 var app = express();
