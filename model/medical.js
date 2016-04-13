@@ -31,4 +31,4 @@ var postSchema= Schema({
   }
 });
 
-module.exports=mongoose.model('user',postSchema);
+module.exports=mongoose.model('medical',postSchema);

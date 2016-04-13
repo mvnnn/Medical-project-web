@@ -6,7 +6,7 @@ var route = require ('./routes/index');
 var info = require ('./routes/info');
 
 var mongoose=require('mongoose');
-var dburl='mongodb://localhost/wwww';
+var dburl='mongodb://student:senteam15@ds011389.mlab.com:11389/courseaid';
 mongoose.connect(dburl);
 
 var bodyparser=require('body-parser');
@@ -14,7 +14,7 @@ var port=process.env.PORT || 8000 ;
 
 
 var app = express();
-app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(favicon(path.join('public','bb.ico')));
 app.use(bodyparser.json());

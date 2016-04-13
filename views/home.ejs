@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+<% include navbar.ejs %>
+
+<form method="POST">
+  <p>Name:
+    <input type="text" name="name" class="form-control"/>
+  </p>
+  <p>Email:
+    <input type="text" name="email" class="form-control"/>
+  </p>
+  <p>Medicine:
+    <input type="text" name="medicine" class="form-control"/>
+  </p>
+  <p>Time:
+    <input type="text" name="time" class="form-control"/>
+  </p>
+  <p>Address:
+    <input type="text" name="address" class="form-control"/>
+  </p>
+  <p>Mobile No.:
+    <input type="text" name="mobile" class="form-control"/>
+  </p>
+  <p>Doctor Precription:
+    <input type="text" name="doctor" class="form-control"/>
+  </p>
+  <p>
+    <input type="submit" class="btn btn-default" value="Add">
+  </p>
+</form>
+
+
+<% if(data) {%>
+  <ul>
+  <% for(var i=0; i < data.length; i++) { %>
+    <li>
+      <h2><%= data[i].name %> ( <%= data[i].medicine %> ){ <%= data[i].time %> }</h2>
+      <p>
+        <a href="/update/<%= data[i]._id %>">
+          <input type="button" value="Update" class="btn btn-default">
+        </a>
+        <a href="/delete/<%= data[i]._id %>">
+          <input type="button" value="Delete" class="btn btn-default">
+        </a>
+      </p>
+    </li>
+<% } %>
+</ul>
+<% } %>
+</body>
+</head>

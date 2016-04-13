@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+<% include navbar.ejs %>
+
+  <form method="POST">
+    <p>Name:
+      <input type="text" name="name" class="form-control" value="<%= data.name %>">
+    </p>
+    <p>Email:
+      <input type="text" name="email" class="form-control" value="<%= data.email %>">
+    </p>
+    <p>Medicine:
+      <input type="text" name="medicine" class="form-control" value="<%= data.medicine %>">
+    </p>
+    <p>Time:
+      <input type="text" name="time" class="form-control" value="<%= data.time %>">
+    </p>
+    <p>Address:
+      <input type="text" name="address" class="form-control" value="<%= data.address %>">
+    </p>
+    <p>Mobile No.:
+      <input type="text" name="mobile" class="form-control" value="<%= data.mobile %>">
+    </p>
+    <p>Doctor Precription:
+      <input type="text" name="doctor" class="form-control" value="<%= data.doctor %>">
+    </p>
+    <p>
+      <input type="submit" class="btn btn-default" value="Update">
+    </p>
+  </form>
+
+</body>
+</html>
