@@ -1,8 +1,10 @@
-Medical project with Express.js + MongoDB + JADE  
+Medical project with Express.js + MongoDB + EJS
 
 you must need to create data folder for database
 ```
   $ npm install
-  $ mkdir data
-  $ mongod --dbpath data/
+  $ npm start
 ```
+
+## Host URL
+https://medical-team.herokuapp.com
