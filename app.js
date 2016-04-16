@@ -6,7 +6,7 @@ var route = require ('./routes/index');
 var info = require ('./routes/info');
 
 var mongoose=require('mongoose');
-var dburl='mongodb://student:senteam15@ds011389.mlab.com:11389/courseaid';
+var dburl='mongodb://student:****@ds011389.mlab.com:11389/courseaid';
 mongoose.connect(dburl);
 
 var bodyparser=require('body-parser');
